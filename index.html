@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보 게임 (세련된 디자인)</title>
+    <!-- Google Fonts - Noto Sans KR 글꼴 추가 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>가위바위보 게임</h1>
+
+    <!-- 타이머는 박스 바깥에 유지 -->
+    <div id="timer-display">시작 버튼을 누르세요!</div>
+
+    <!-- 게임 전체를 감싸는 새로운 컨테이너 (하얀 박스가 될 부분) -->
+    <div id="game-container">
+        <button id="start-button">게임 시작</button>
+
+        <div id="game-area">
+            <p>타이머 시간 안에 선택하세요!</p>
+            <div id="game-buttons">
+                <!-- 버튼 순서를 가위, 바위, 보 순서로 변경 -->
+                <button id="scissors" disabled>가위 ✌️</button>
+                <button id="rock" disabled>바위 ✊</button>
+                <button id="paper" disabled>보 ✋</button>
+            </div>
+        </div>
+
+        <div id="result">
+            결과: 대기 중...
+        </div>
+
+        <!-- 불꽃놀이/파티클 효과를 위한 컨테이너 추가 -->
+        <div id="fireworks-container"></div>
+
+    </div> <!-- #game-container 끝 -->
+
+    <!-- JavaScript 파일 연결 -->
+    <script src="script.js"></script>
+
+</body>
+</html>
